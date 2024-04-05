@@ -4,10 +4,11 @@
     <HeaderMobileAccountNavigation v-model:opened="mobileAccountNavigationOpened" />
 
     <div class="logo-container">
-      <NuxtLink :to="{ name: 'bridge' }">
+      <!-- <NuxtLink :to="{ name: 'bridge' }">
         <IconsZkSync class="logo-icon" />
       </NuxtLink>
-      <span class="beta-label">Beta</span>
+      <span class="beta-label">Beta</span> -->
+      <IconsRuneChainLogo class="logo-icon" />
     </div>
     <div class="links-container">
       <NuxtLink
@@ -99,7 +100,7 @@ const { selectedColorMode, switchColorMode } = useColorMode();
   .logo-container {
     @apply flex w-full flex-shrink items-center gap-2 sm:w-max;
     .logo-icon {
-      @apply h-auto w-full max-w-[140px] sm:max-w-[160px];
+      @apply h-auto w-full max-w-[140px] sm:max-w-[120px];
     }
     .beta-label {
       @apply block rounded-lg bg-neutral-100 p-2 text-xs font-normal uppercase leading-none dark:bg-neutral-900;

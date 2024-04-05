@@ -3,7 +3,8 @@
     <MenuButton as="template">
       <CommonButtonDropdown :toggled="open">
         <template #left-icon>
-          <IconsEra />
+          <!-- <IconsEra /> -->
+          <IconsRuneChainLogo />
         </template>
         <span>{{ selectedNetwork.name }}</span>
       </CommonButtonDropdown>
@@ -20,7 +21,8 @@
             @click="buttonClicked(item)"
           >
             <template #left-icon>
-              <IconsEra />
+              <!-- <IconsEra /> -->
+              <IconsRuneChainLogo />
             </template>
             <span>{{ item.name }}</span>
             <template #right-icon>

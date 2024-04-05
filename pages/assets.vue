@@ -86,7 +86,7 @@
 
       <template v-if="noBalances">
         <TypographyCategoryLabel>
-          To start using zkSync ecosystem, deposit tokens in any convenient way
+          To start using the RuneChain, deposit tokens in any convenient way
         </TypographyCategoryLabel>
 
         <div class="flex flex-col gap-block-gap">
@@ -176,17 +176,17 @@ const depositMethods = computed(() => {
   const isMainnet = eraNetwork.value.l1Network?.id === mainnet.id;
   const isTestnet = eraNetwork.value.l1Network && eraNetwork.value.l1Network.id !== mainnet.id;
   if (isTestnet && eraNetwork.value.displaySettings?.showPartnerLinks) {
-    methods.push({
-      props: {
-        iconUrl: "/img/faucet.svg",
-        label: "Faucet",
-        description: "Receive testnet funds",
-        as: "a",
-        href: "https://docs.zksync.io/build/tooling/network-faucets.html",
-        target: "_blank",
-        icon: ArrowTopRightOnSquareIcon,
-      },
-    });
+    // methods.push({
+    //   props: {
+    //     iconUrl: "/img/faucet.svg",
+    //     label: "Faucet",
+    //     description: "Receive testnet funds",
+    //     as: "a",
+    //     href: "https://docs.zksync.io/build/tooling/network-faucets.html",
+    //     target: "_blank",
+    //     icon: ArrowTopRightOnSquareIcon,
+    //   },
+    // });
   }
   methods.push({
     props: {

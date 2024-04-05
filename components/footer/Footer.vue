@@ -1,17 +1,17 @@
 <template>
   <footer class="footer">
     <div>
-      <CommonButtonLabel v-if="showAddNetworkButton" @click="addNetworkToWallet()">
+      <!-- <CommonButtonLabel v-if="showAddNetworkButton" @click="addNetworkToWallet()">
         Add {{ eraNetwork.name }} to your wallet
-      </CommonButtonLabel>
+      </CommonButtonLabel> -->
     </div>
     <div class="links-container">
-      <CommonButtonLabel as="a" href="https://zksync.io/terms" target="_blank" class="footer-link">
+      <!-- <CommonButtonLabel as="a" href="https://zksync.io/terms" target="_blank" class="footer-link">
         Terms of Service
       </CommonButtonLabel>
       <CommonButtonLabel as="a" href="https://zksync.io/privacy" target="_blank" class="footer-link">
         Privacy Policy
-      </CommonButtonLabel>
+      </CommonButtonLabel> -->
     </div>
   </footer>
 </template>

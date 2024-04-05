@@ -17,7 +17,7 @@ export const l1Networks = {
   },
   sepolia: {
     ...sepolia,
-    name: "Ethereum Sepolia Testnet",
+    name: "BVM Testnet",
   },
 } as const;
 export type L1Network = Chain;
@@ -81,8 +81,8 @@ const publicChains: ZkSyncNetwork[] = [
   },
   {
     id: 300,
-    key: "sepolia",
-    name: "zkSync Sepolia Testnet",
+    key: "RuneChain Key",
+    name: "RuneChain Testnet",
     rpcUrl: "https://sepolia.era.zksync.dev",
     blockExplorerUrl: "https://sepolia-era.zksync.network",
     blockExplorerApi: "https://block-explorer-api.sepolia.zksync.dev",
