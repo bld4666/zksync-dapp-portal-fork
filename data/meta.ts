@@ -1,18 +1,18 @@
 export const portal = {
-  title: "zkSync Portal | View balances, transfer and bridge tokens",
+  title: "RuneChain Portal | View balances, transfer and bridge tokens",
   description:
-    "zkSync Portal allows you to view your balances, transfer tokens and bridge assets between zkSync and Ethereum",
+    "RuneChain Portal allows you to view your balances, transfer tokens and bridge assets between RuneChain and BVM",
   previewImg: {
-    src: "https://portal.zksync.io/preview.png",
-    alt: "zkSync Portal",
+    src: "https://storage.googleapis.com/tc-cdn-prod/nbc/images/Rune%20%20Chain.jpg", // TO DO
+    alt: "RuneChain Portal", // TO DO
   },
 };
 export const bridge = {
-  title: "zkSync Bridge | Transfer funds between zkSync and Ethereum",
+  title: "RuneChain Bridge | Transfer funds between RuneChain and BVM",
   description:
-    "With the zkSync Bridge you can easily deposit tokens to zkSync. Enjoy faster, cheaper and more efficient transactions with the future proof zkEVM scaling Ethereum's security and values.",
+    "With the RuneChain Bridge you can easily deposit tokens to RuneChain. Enjoy faster, cheaper and more efficient transactions with the future proof zkEVM scaling Bitcoin's security and values.",
   previewImg: {
-    src: "https://portal.zksync.io/preview.png",
-    alt: "zkSync Bridge",
+    src: "https://storage.googleapis.com/tc-cdn-prod/nbc/images/Rune%20%20Chain.jpg", // TO DO
+    alt: "RuneChain Bridge", // TO DO
   },
 };
