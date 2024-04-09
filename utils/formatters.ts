@@ -2,6 +2,8 @@ import { BigNumber, type BigNumberish } from "ethers";
 import { formatUnits, getAddress, parseUnits } from "ethers/lib/utils";
 import { BaseError } from "viem";
 
+const MAX_FRACTIONAL = 5; // Ex: 2.714567890 => 2.71456
+
 export function shortenAddress(address: string, chars = 3): string {
   return `${address.slice(0, chars + 2)}...${address.slice(-3)}`;
 }
@@ -53,7 +55,7 @@ export function removeSmallAmount(
   }
 
   let acc = whole + ".";
-  for (let a = 0; a < fractional.length; a++) {
+  for (let a = 0; a < fractional.length && a < MAX_FRACTIONAL; a++) {
     const currentDecimalAmount = "0." + "".padEnd(a, "0") + "9";
     const currentPrice = parseFloat(currentDecimalAmount) * price;
     if (currentPrice >= minTokenValue || acc.length + 1 < maxChars) {
